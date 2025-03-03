@@ -1,0 +1,93 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #d3dbed;
+    margin: 0;
+    padding: 0;
+}
+
+.main_box {
+    size: 100%;
+    background-color: #41577c;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 3em #41577c;
+    /* box-shadow: 10px 5px 5px red; */
+}
+
+h1 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #29344a;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#back_button {
+
+    background-color: white;
+    position: absolute;
+    left: 1450px;
+    top: 800px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    color: #29344a;
+    transition: 0.5s;
+    width: 90%;
+    padding: 10px;
+    height: 70px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+    color: #41577c;
+}
+
+.headline {
+
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+button {
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #41577c;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: 1000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #d3dbed;
+    transform: scale(1.1);
+}
+
+input:hover {
+    background-color: #d3dbed;
+    transform: scale(1.01);
+}

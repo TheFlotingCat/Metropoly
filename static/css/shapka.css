@@ -1,0 +1,48 @@
+html{
+    min-height: 100%;
+  }
+  body {
+      font-family: "Lucida Console", "Courier New", monospace;
+      background-position: no-repeat;
+      background-attachment: fixed;
+      background-image: url(../media/images/background2.jpg);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+* {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff76;
+  position:absolute;
+  width:100%;
+}
+.topnav a.click {
+  float: left;
+  color: #ffffff;
+  height: 100%;
+  width: 10%;
+  position: relative;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;  
+}
+      
+      .topnav a.click:hover {
+        background-color: #b5e4f487;
+        color: rgb(255, 255, 255);
+      }
+      
+.topnav a.click.active {
+  color: rgb(250, 250, 250);
+}
+.container {
+  position: relative;
+  padding-bottom: 100px;
+}      

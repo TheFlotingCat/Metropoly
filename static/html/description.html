@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать!</title>
+    <link rel="stylesheet" href="../static/css/description.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=El+Messiri:wght@400..700" />
+</head>
+<body>
+    <div id="user_name"></div>
+    <div class="container">
+        <div class="topnav">
+            <a class="click" href="/">
+                .
+                <img width="150" src="../static/media/images/logo.svg">
+            </a>
+            <a class="click" onclick="redirection('/game/connect_to_room')">Войти в игру</a>
+            <a class="click" onclick="redirection('/game/create_room')">Создать игру</a>
+            <a class="click" onclick="redirection('/signin')">Войти в аккуант</a>
+            <a class="click" onclick="redirection('/signup')">Создать аккаунт</a>
+            <a class="click" onclick="sessionStorage.clear(); hide_element_by_id('user_name')">Выйти</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Welcome to Metropoly Online</h1>
+    </header>
+
+    <section class="description">
+        <p><span class="first_sybol">Д</span>обро пожаловать в мир "Метрополии Онлайн" - виртуальной версии классической
+            настольной игры, которая заставит
+            вас окунуться в захватывающий опыт управления станциями московского метро, стратегического планирования и
+            финансовых
+            уловок, прямо из уюта вашего дома!</p>
+
+        <p>В "Метрополии Онлайн" вас ждет увлекательное путешествие по виртуальному городу, где вы сможете покупать,
+            продавать и обменивать станциями метро, устанавливать на них новые поезда, вести переговоры с соперниками, строить и развивать свои линии, а
+            также создавать стратегии для завоевания финансового господства в мире метро.</p>
+        <hr>
+        <p><span class="first_sybol">Ц</span>ентром, на который была направленна наша разработка, была команда: проект был создан командой опытных (нет) разработчиков и поклонников игры "Монополия", чья цель - перенести
+            этот знаменитый игровой опыт в онлайн-мир с максимальным удобством и весельем для игроков всех возрастов.
+        </p>
+        <p>Наша команда постоянно работает над обновлениями и улучшениями игрового процесса, чтобы каждый раз
+            захватывать вас новыми возможностями и вызовами.</p>
+        <hr>
+        <p><span class="first_sybol">П</span>рисоединяйтесь к "Метрополии Онлайн" прямо сейчас и отправляйтесь в захватывающее приключение, которое
+            никогда не заканчивается!</p>
+        <p>"Метрополии Онлайн" - ваше идеальное место для развлечения и соревнования!</p>
+    </section>
+
+    <footer>
+        <h2 style="color:white;">--About us--</h2>
+        <h3 style="color:white;">phone number: +7 999 (888) 12-34</h3>
+    </footer>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

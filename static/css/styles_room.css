@@ -1,0 +1,357 @@
+* {
+    min-width: 10px;
+}
+
+body {
+    /* min-width: none; */
+    display: flex;
+    background-color: #80dd9c;
+    position: relative;
+}
+
+.message {
+    cursor: context-menu;
+    user-select: none;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 5;
+
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-family: "Raleway";
+    padding-inline: 10px;
+    border-radius: 5px;
+    opacity: 90%;
+
+
+    top: 5%;
+}
+
+/* ------------------------------- */
+/* GAMEBOARD */
+.gameboard {
+    min-width: 700px;
+    top: 12px;
+    position: relative;
+    width: 750px;
+    height: 750px;
+    left: 12px;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: #c5e1cd;
+    box-shadow: 0 0 6px 1px rgb(60, 60, 60);
+}
+
+.field_container_rv {
+    width: 12.5%;
+    height: 72.25%;
+    position: absolute;
+
+}
+
+.field_container_cl {
+    height: 12.5%;
+    width: 75.30%;
+    position: absolute;
+}
+
+.field_cl {
+    height: 100%;
+    width: 10.73%;
+    position: relative;
+    background-color: rgb(236, 236, 234);
+    border: 1px solid darkgrey;
+    float: left;
+}
+
+.field_rv {
+    width: 100%;
+    height: 11.15%;
+
+    position: relative;
+    background-color: rgb(236, 236, 234);
+    border: 1px solid darkgrey;
+}
+
+.field_edge {
+    z-index: 2;
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    background-color: rgb(236, 236, 234);
+}
+
+.field_edge,
+.field_cl,
+.field_rv {
+    transition: 0.5s;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 0px darkgray;
+    font-family: 'Raleway';
+}
+
+
+#flex_station_name {
+    cursor: context-menu;
+    user-select: none;
+
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+
+    font-weight: 900;
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+
+.field_edge:hover,
+.field_cl:hover,
+.field_rv:hover {
+    background-color: #791515;
+    transform: scale(1.05);
+}
+
+.player {
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+div.dice_countiner img {
+    transition: 0.2s;
+    width: 50px;
+    padding: 20px;
+}
+
+.dice_countiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button_add_player {
+    position: absolute;
+    top: 5%;
+    left: 780px;
+}
+
+#button_start_game {
+    position: absolute;
+    top: 8%;
+    left: 780px;
+    display: none;
+}
+
+/* ------------------------------- */
+/* INFOBOARD */
+
+#info_board {
+    position: relative;
+    top: 12px;
+    left: 100px;
+}
+
+.money_column_container {
+    position: relative;
+    height: 100%;
+    width: 15.25%;
+    display: inline-block;
+    margin-right: 3.5px;
+    margin-left: 3.5px;
+
+    text-align: center;
+}
+
+.money_column {
+    transition: 0.5s;
+    position: relative;
+    top: 90%;
+    height: 0%;
+    width: 100%;
+
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+}
+
+.money_column #flex_station_name {
+    font-family: 'Lucida Sans';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.money_column:hover {
+    transform: scale(1.015);
+}
+
+.leaderboard_player_name {
+    position: absolute;
+    font-family: "Raleway";
+    top: 91%;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.leaderboard {
+    padding: 10px;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px rgb(60, 60, 60);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.databoard p {
+    margin: 0;
+}
+
+.databoard {
+    font-family: "Raleway";
+    
+    padding: 10px;
+    position: relative;
+    top: 30px;
+
+    width: 500px;
+    height: 430px;
+    border-radius: 2px;
+    box-shadow: 0 0 15px 1px rgb(60, 60, 60);
+    background-color: rgb(255, 255, 255);
+}
+
+.station_price_info_value,
+.station_price_info_title {
+    position: relative;
+    font-family: "Raleway";
+    font-size: 20px;
+}
+
+
+.station_price_info_title {
+    font-weight: 400;
+    float: left;
+    left: 20px;
+}
+
+.station_price_info_value {
+    font-weight: 600;
+    left: -20px;
+    float: right;
+}
+
+
+.station_price {
+    display: grid;
+    font-weight: 600;
+    align-items: center;
+    font-family: "Raleway";
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    position: absolute;
+        
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, 0%);
+}
+
+.station_name {
+    display: grid;
+    align-items: center;
+
+    width: 100%;
+    height: 20%;
+
+    font-family: "Raleway";
+    font-size: 50px;
+    font-weight: 400;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+
+    color: white;
+    background-color: red;
+
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+/* ------------------------------- */
+/* BUTTONS */
+
+aside {
+    position: relative;
+    left: 120px;
+    width: 60px;
+    text-align: right;
+    float: right;
+}
+
+aside button {
+    position: relative;
+    top: 12px;
+    font-size: 30px;
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+    opacity: 20%;
+    border: none;
+    transition: 0.5s;
+    margin-top: 30px;
+}
+
+.activated_button {
+    box-shadow: 0 0 5px 1px rgb(60, 60, 60);
+    border: auto;
+    opacity: 100%;
+}
+
+.unactivated_button {
+    box-shadow: none;
+    border: none;
+    opacity: 20%;
+}
+
+.money {
+    position: relative;
+    top: 12px;
+    margin-bottom: 15px;
+    background-color: #3f6749;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+    font-family: 'Lucida Sans';
+}
+
+#button_buy_street {
+    float: right;
+}
+
+#icon_train {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 10;
+    width: 80px;
+}

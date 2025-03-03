@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#user_name {
+  z-index: 100;
+  cursor: context-menu;
+  position: fixed;
+  left: 93%;
+  top: 2%;
+  background-color: #ffffff25;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+hr {
+  border-color: white;
+  position: relative;
+  margin-bottom: 10px;
+  /* padding-bottom: 10px; */
+}
+
+.first_sybol {
+  font-size: 40px;
+  font-weight:600;
+  font-family: 'Arial Narrow Bold', sans-serif
+}
+
+a.click {
+  cursor: context-menu;
+  user-select: none;
+  z-index: 3;
+}
+
+footer {
+  z-index: 1;
+  width: 100%;
+  background-color: red;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.description p{
+  position: relative;
+}
+
+body {
+  background-color: rgb(56, 96, 206);
+  font-family: "Raleway";
+  font-style: inherit;
+}
+
+#user_name_field{
+  position: relative;
+  left: 5%;
+  top: 100px;
+  color: white;
+  width: 10%;
+  background-color: #ffffff20;
+  text-align: center;
+  font-size: 100px;
+  padding: 10px;
+
+}
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff76;
+  position: relative;
+  width: 100%;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+
+  background-color: #f0f1ff25;
+  text-align: center;
+
+  font-size: 30px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+a img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.description {
+  width: 90%;
+  position: relative;
+  left: 3%;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.description p {
+  margin-bottom: 23px;
+}
+
+.topnav a.click {
+  float: left;
+  color: #ffffff;
+  height: 100%;
+  width: 10%;
+  position: relative;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.click:hover {
+  background-color: #b5e4f487;
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.click.active {
+  color: rgb(250, 250, 250);
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(35, 41, 128);
+  text-align: center;
+  bottom: 0%;
+}
+
+.main-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: large;
+}
+
+.container {
+  position: relative;
+}
+
+#about {
+  font-size: large;
+  color: darkgoldenrod;
+  text-decoration: underline #2ecc71;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mosmetro.svg/2560px-Mosmetro.svg.png">
+    <link rel="stylesheet" href="../static/css/styles_room.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <title>Game room</title>
+</head>
+
+<body>
+    <!-- <img src = "../assets/currency"/> -->
+
+    <div id="gameboard" class="gameboard">
+        <div class="dice_countiner">
+            <img src="../static/media/images/dice/dice1.png" alt="">
+            <img src="../static/media/images/dice/dice1.png" alt="">
+        </div>
+        <div id="field1" class="field_edge"></div>
+        <div id="left_container" class="field_container_cl" style="left: 12.7%;">
+            <div id="field2" class="field_cl"></div>
+
+            <div id="field3" class="field_cl"></div>
+            <div id="field4" class="field_cl"></div>
+            <div id="field5" class="field_cl"></div>
+            <div id="field6" class="field_cl"></div>
+            <div id="field7" class="field_cl"></div>
+            <div id="field8" class="field_cl"></div>
+            <div id="field9" class="field_cl"></div>
+            <div id="field10" class="field_cl"></div>
+        </div>
+
+        <div id="field11" class="field_edge" style="top: 0; right:0;"></div>
+
+        <div id="left_container" class="field_container_rv" style="right: 0.2%; top: 12.7%;">
+            <div id="field12" class="field_rv "></div>
+            <div id="field13" class="field_rv "></div>
+            <div id="field14" class="field_rv "></div>
+            <div id="field15" class="field_rv "></div>
+            <div id="field16" class="field_rv "></div>
+            <div id="field17" class="field_rv "></div>
+            <div id="field18" class="field_rv "></div>
+            <div id="field19" class="field_rv "></div>
+            <div id="field20" class="field_rv "></div>
+        </div>
+
+
+        <div id="field21" class="field_edge" style="right: 0; bottom: 0;"></div>
+
+        <div id="left_container" class="field_container_cl" style="left: 12.5%; bottom:2px;">
+            <div id="field30" class="field_cl"></div>
+            <div id="field29" class="field_cl"></div>
+            <div id="field28" class="field_cl"></div>
+            <div id="field27" class="field_cl"></div>
+            <div id="field26" class="field_cl"></div>
+            <div id="field25" class="field_cl"></div>
+            <div id="field24" class="field_cl"></div>
+            <div id="field23" class="field_cl"></div>
+            <div id="field22" class="field_cl"></div>
+        </div>
+
+
+        <div id="field31" class="field_edge" style="bottom: 0; left: 0;"></div>
+        <div id="left_container" class="field_container_rv" style="left: 0; top: 12.7%;">
+            <div id="field40" class="field_rv"></div>
+            <div id="field39" class="field_rv"></div>
+            <div id="field38" class="field_rv"></div>
+            <div id="field37" class="field_rv"></div>
+            <div id="field36" class="field_rv"></div>
+            <div id="field35" class="field_rv"></div>
+            <div id="field34" class="field_rv"></div>
+            <div id="field33" class="field_rv"></div>
+            <div id="field32" class="field_rv"></div>
+        </div>
+    </div>
+
+    <div id="info_board">
+        <div id="leaderboard" class="leaderboard">
+        </div>
+
+        <div id="databoard" class="databoard">
+        </div>
+    </div>
+    <aside>
+        <div class="money"></div>
+        <button id="button_buy_station" class="unactivated_button">buy</button>
+        <button id="button_buy_train" class="unactivated_button">
+            <img src="../static/media/images/icons/train.png" id="icon_train" alt="">
+        </button>
+        <button id="button_next_move" class="unactivated_button">next</button>
+    </aside>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../static/js/script_room.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+#win {
+    color: #3306f3;
+    text-align: center;
+    font-size: larger;
+    position: absolute;
+    vertical-align: central;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}

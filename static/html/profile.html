@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../static/js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать!</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=El+Messiri:wght@400..700" />
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a class="click" href="/">
+                .
+                <img width="150" src="../static/media/images/logo.svg">
+            </a>
+            <a class="click" onclick="redirection('/game/connect_to_room')">Войти в игру</a>
+            <a class="click" onclick="redirection('/game/create_room')">Создать игру</a>
+            <a class="click" onclick="redirection('/signin')">Войти в аккуант</a>
+            <a class="click" onclick="redirection('/signup')">Создать аккаунт</a>
+        </div>
+    </div>
+
+    <h2>Ник</h2>
+    <div id="user_name_field"></div>
+
+    <h2>Сыгранные игры</h2>
+    <div id="played_games"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../static/js/profile.js"></script>
+</body>
+
+</html>

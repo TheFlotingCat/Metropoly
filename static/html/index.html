@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/index_hide_buttons.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать!</title>
+    <link rel="stylesheet" href="../static/css/description.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=El+Messiri:wght@400..700" />
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a class="click" onclick="redirection('/game/connect_to_room')">Войти в игру</a>
+            <a class="click" onclick="redirection('/game/create_room')">Создать игру</a>
+            <a class="click signing_up" onclick="redirection('/signin')">Войти в аккуант</a>
+            <a class="click signing_up" onclick="redirection('/signup')">Создать аккаунт</a>
+            <a class="click" onclick="sessionStorage.clear(); hide_element_by_id('user_name')">Выйти</a>
+        </div>
+    </div>
+
+    <div style="overflow: hidden; position:absolute;">
+        <h1 style="color:white; padding: 100px">Metropoly</h1>
+    </div>
+
+    <img alt="background" src = "../static/media/images/main_backgound.jpg" width="100%" height="100%">
+
+    <center>
+        <a class="click" id="about" onclick="redirection('/about')">О проекте</a>
+    </center>
+</body>
+</html>

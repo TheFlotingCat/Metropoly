@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/join.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=El+Messiri:wght@400..700" />
+    <title>Войти в игру</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a class="click" href="/">
+                .
+                <img width="150" src="../static/media/images/logo.svg">
+            </a>
+            <a class="click" href="/game/create_room">Новая игра</a>
+        </div>
+    </div>
+
+    <div class="container_reg">
+        <img src="../static/media/images/logo.svg" width="300" height="100">
+        <form method="post">
+            <input type="text" id="room_id" name="room_id" placeholder="Код комнаты">
+            <input type="password" id="room_password" name="room_password" placeholder="Пароль комнаты">
+        </form>
+
+<!--        This div will be filled up with error messages as they appear-->
+        <div id="error_message"></div>
+
+        <button onclick="connect_to_room()" class="btn"><span>Войти</span></button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/join.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=El+Messiri:wght@400..700" />
+    <title>Вход</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mosmetro.svg/2560px-Mosmetro.svg.png">
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a class="click" href="/">
+                .
+                <img width="150" src="../static/media/images/logo.svg">
+            </a>
+            <a class="click" onclick="redirection('/signin')">Войти в аккаунт</a>
+        </div>
+    </div>
+
+    <div class="container_reg">
+        <img alt="logo" src="../static/media/images/logo.svg" width="300" height="100">
+        <form method="post">
+            <input type="text" id="login" name="login" placeholder="Ваш логин">
+            <input type="password" id="password" name="password" placeholder="Ваш пароль">
+            <input type="password" id="password_check" name="password_check" placeholder="Повторите пароль">
+        </form>
+
+<!--        This div will be filled up with error messages as they appear-->
+        <div id="error_message"></div>
+
+        <button onclick="signup()" class="btn"><span>Создать</span></button>
+    </div>
+</body>
+</html>
